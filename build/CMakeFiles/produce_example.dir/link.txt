@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/produce_example.dir/examples/produce_example.cpp.o  -o produce_example  libSharedMemoryRingBuffer.a -lpthread -lrt 

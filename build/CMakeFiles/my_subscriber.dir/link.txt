@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/my_subscriber.dir/examples/my_subscriber.cpp.o  -o my_subscriber  libSimpleShm.a libSharedMemoryRingBuffer.a -lpthread -lrt 

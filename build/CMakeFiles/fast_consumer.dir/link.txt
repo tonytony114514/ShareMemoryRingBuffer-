@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/fast_consumer.dir/examples/fast_consumer.cpp.o  -o fast_consumer  libSharedMemoryRingBuffer.a -lpthread -lrt 

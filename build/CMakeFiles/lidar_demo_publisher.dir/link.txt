@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/lidar_demo_publisher.dir/examples/lidar_demo_publisher.cpp.o  -o lidar_demo_publisher  libSimpleShm.a libSharedMemoryRingBuffer.a -lpthread -lrt 

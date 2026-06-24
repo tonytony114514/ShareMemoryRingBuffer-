@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/pointcloud_demo_subscriber.dir/examples/pointcloud_demo_subscriber.cpp.o  -o pointcloud_demo_subscriber  libSimpleShm.a libSharedMemoryRingBuffer.a -lpthread -lrt 

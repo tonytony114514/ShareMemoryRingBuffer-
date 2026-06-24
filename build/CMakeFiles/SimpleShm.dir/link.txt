@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSimpleShm.a  CMakeFiles/SimpleShm.dir/src/SimpleShm.cpp.o
+/usr/bin/ranlib libSimpleShm.a

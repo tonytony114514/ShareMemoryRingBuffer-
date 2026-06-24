@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/lidar_simulator.dir/examples/lidar_simulator.cpp.o  -o lidar_simulator  libSharedMemoryRingBuffer.a -lpthread -lrt 

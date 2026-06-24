@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSharedMemoryRingBuffer.a  CMakeFiles/SharedMemoryRingBuffer.dir/src/SharedMemoryRingBuffer.cpp.o
+/usr/bin/ranlib libSharedMemoryRingBuffer.a

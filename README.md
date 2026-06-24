@@ -1,0 +1,2 @@
+# ShareMemoryRingBuffer-
+本机快速传输高流量高内存数据

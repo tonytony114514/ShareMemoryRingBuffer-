@@ -16,3 +16,5 @@ ShmSubscriber(const std::string& name);
 bool receive(std::vector<uint8_t>& data, std::string* filename, int timeout_ms);
 
 文件中有示例图
+
+程序能长时间运行，现在已持续运行6小时

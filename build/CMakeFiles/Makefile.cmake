@@ -51,6 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/http_monitor.dir/DependInfo.cmake"
   "CMakeFiles/pointcloud_demo_subscriber.dir/DependInfo.cmake"
   "CMakeFiles/SharedMemoryRingBuffer.dir/DependInfo.cmake"
   "CMakeFiles/bigmsg_publisher.dir/DependInfo.cmake"

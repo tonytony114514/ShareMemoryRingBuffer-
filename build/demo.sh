@@ -63,8 +63,16 @@ echo "   - 点云生产者 PID: ${PID_LID}"
 echo ""
 echo "   按 Ctrl+C 停止演示..."
 
+echo "启动 HTTP 监控（端口 8080）..."
+./http_monitor /demo_shm 8080 &
+PID_HTTP=$!
+trap "kill ${PID_HTTP} ..."  # 一并捕获退出
+
 # 捕获 Ctrl+C，杀死所有进程
 trap "echo '停止所有进程...'; kill ${PID_SUB_GUARD} ${PID_IMG_GUARD} ${PID_CAM} ${PID_LID} 2>/dev/null; rm -f /dev/shm${SHM_NAME}; echo '✅ 已清理。'; exit 0" INT
 
 # 等待守护进程（或任意子进程）
 wait
+
+
+

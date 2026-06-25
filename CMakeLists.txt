@@ -70,3 +70,6 @@ target_link_libraries(bigmsg_publisher SimpleShm)
 
 add_executable(bigmsg_subscriber examples/bigmsg_subscriber.cpp)
 target_link_libraries(bigmsg_subscriber SimpleShm)
+
+add_executable(http_monitor examples/http_monitor.cpp)
+target_link_libraries(http_monitor SharedMemoryRingBuffer pthread rt)

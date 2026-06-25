@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named http_monitor
+
+# Build rule for target.
+http_monitor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http_monitor
+.PHONY : http_monitor
+
+# fast build rule for target.
+http_monitor/fast:
+	$(MAKE) -f CMakeFiles/http_monitor.dir/build.make CMakeFiles/http_monitor.dir/build
+.PHONY : http_monitor/fast
+
+#=============================================================================
 # Target rules for targets named pointcloud_demo_subscriber
 
 # Build rule for target.
@@ -480,6 +493,33 @@ examples/fast_consumer.cpp.s:
 	$(MAKE) -f CMakeFiles/fast_consumer.dir/build.make CMakeFiles/fast_consumer.dir/examples/fast_consumer.cpp.s
 .PHONY : examples/fast_consumer.cpp.s
 
+examples/http_monitor.o: examples/http_monitor.cpp.o
+
+.PHONY : examples/http_monitor.o
+
+# target to build an object file
+examples/http_monitor.cpp.o:
+	$(MAKE) -f CMakeFiles/http_monitor.dir/build.make CMakeFiles/http_monitor.dir/examples/http_monitor.cpp.o
+.PHONY : examples/http_monitor.cpp.o
+
+examples/http_monitor.i: examples/http_monitor.cpp.i
+
+.PHONY : examples/http_monitor.i
+
+# target to preprocess a source file
+examples/http_monitor.cpp.i:
+	$(MAKE) -f CMakeFiles/http_monitor.dir/build.make CMakeFiles/http_monitor.dir/examples/http_monitor.cpp.i
+.PHONY : examples/http_monitor.cpp.i
+
+examples/http_monitor.s: examples/http_monitor.cpp.s
+
+.PHONY : examples/http_monitor.s
+
+# target to generate assembly for a file
+examples/http_monitor.cpp.s:
+	$(MAKE) -f CMakeFiles/http_monitor.dir/build.make CMakeFiles/http_monitor.dir/examples/http_monitor.cpp.s
+.PHONY : examples/http_monitor.cpp.s
+
 examples/image_demo_subscriber.o: examples/image_demo_subscriber.cpp.o
 
 .PHONY : examples/image_demo_subscriber.o
@@ -756,6 +796,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... http_monitor"
 	@echo "... pointcloud_demo_subscriber"
 	@echo "... SharedMemoryRingBuffer"
 	@echo "... bigmsg_publisher"
@@ -792,6 +833,9 @@ help:
 	@echo "... examples/fast_consumer.o"
 	@echo "... examples/fast_consumer.i"
 	@echo "... examples/fast_consumer.s"
+	@echo "... examples/http_monitor.o"
+	@echo "... examples/http_monitor.i"
+	@echo "... examples/http_monitor.s"
 	@echo "... examples/image_demo_subscriber.o"
 	@echo "... examples/image_demo_subscriber.i"
 	@echo "... examples/image_demo_subscriber.s"

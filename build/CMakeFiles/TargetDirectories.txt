@@ -1,5 +1,6 @@
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/pointcloud_demo_subscriber.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/SharedMemoryRingBuffer.dir
+/home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/bigmsg_publisher.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/fast_consumer.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/produce_example.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/SimpleShm.dir
@@ -8,6 +9,7 @@
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/image_demo_subscriber.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/my_publisher.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/camera_demo_publisher.dir
+/home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/bigmsg_subscriber.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/my_subscriber.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/camera_subscriber.dir
 /home/tony/ShareMemoryRingBuffer1/build/CMakeFiles/camera_publisher.dir

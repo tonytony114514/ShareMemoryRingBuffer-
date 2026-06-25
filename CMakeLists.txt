@@ -64,3 +64,9 @@ target_link_libraries(image_demo_subscriber SimpleShm ${OpenCV_LIBS})
 
 add_executable(pointcloud_demo_subscriber examples/pointcloud_demo_subscriber.cpp)
 target_link_libraries(pointcloud_demo_subscriber SimpleShm)
+
+add_executable(bigmsg_publisher examples/bigmsg_publisher.cpp)
+target_link_libraries(bigmsg_publisher SimpleShm)
+
+add_executable(bigmsg_subscriber examples/bigmsg_subscriber.cpp)
+target_link_libraries(bigmsg_subscriber SimpleShm)

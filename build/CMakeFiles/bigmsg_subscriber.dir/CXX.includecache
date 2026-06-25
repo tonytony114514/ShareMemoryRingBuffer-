@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SharedMemoryRingBuffer.h
+cstddef
+-
+cstdint
+-
+string
+-
+atomic
+-
+functional
+-
+vector
+-
+
+../include/SimpleShm.h
+SharedMemoryRingBuffer.h
+../include/SharedMemoryRingBuffer.h
+string
+-
+vector
+-
+functional
+-
+chrono
+-
+thread
+-
+
+/home/tony/ShareMemoryRingBuffer1/examples/bigmsg_subscriber.cpp
+SimpleShm.h
+/home/tony/ShareMemoryRingBuffer1/examples/SimpleShm.h
+iostream
+-
+vector
+-
+chrono
+-
+

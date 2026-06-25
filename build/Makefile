@@ -137,6 +137,19 @@ SharedMemoryRingBuffer/fast:
 .PHONY : SharedMemoryRingBuffer/fast
 
 #=============================================================================
+# Target rules for targets named bigmsg_publisher
+
+# Build rule for target.
+bigmsg_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bigmsg_publisher
+.PHONY : bigmsg_publisher
+
+# fast build rule for target.
+bigmsg_publisher/fast:
+	$(MAKE) -f CMakeFiles/bigmsg_publisher.dir/build.make CMakeFiles/bigmsg_publisher.dir/build
+.PHONY : bigmsg_publisher/fast
+
+#=============================================================================
 # Target rules for targets named fast_consumer
 
 # Build rule for target.
@@ -215,6 +228,19 @@ camera_demo_publisher/fast:
 .PHONY : camera_demo_publisher/fast
 
 #=============================================================================
+# Target rules for targets named bigmsg_subscriber
+
+# Build rule for target.
+bigmsg_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bigmsg_subscriber
+.PHONY : bigmsg_subscriber
+
+# fast build rule for target.
+bigmsg_subscriber/fast:
+	$(MAKE) -f CMakeFiles/bigmsg_subscriber.dir/build.make CMakeFiles/bigmsg_subscriber.dir/build
+.PHONY : bigmsg_subscriber/fast
+
+#=============================================================================
 # Target rules for targets named my_subscriber
 
 # Build rule for target.
@@ -291,6 +317,60 @@ lidar_demo_publisher: cmake_check_build_system
 lidar_demo_publisher/fast:
 	$(MAKE) -f CMakeFiles/lidar_demo_publisher.dir/build.make CMakeFiles/lidar_demo_publisher.dir/build
 .PHONY : lidar_demo_publisher/fast
+
+examples/bigmsg_publisher.o: examples/bigmsg_publisher.cpp.o
+
+.PHONY : examples/bigmsg_publisher.o
+
+# target to build an object file
+examples/bigmsg_publisher.cpp.o:
+	$(MAKE) -f CMakeFiles/bigmsg_publisher.dir/build.make CMakeFiles/bigmsg_publisher.dir/examples/bigmsg_publisher.cpp.o
+.PHONY : examples/bigmsg_publisher.cpp.o
+
+examples/bigmsg_publisher.i: examples/bigmsg_publisher.cpp.i
+
+.PHONY : examples/bigmsg_publisher.i
+
+# target to preprocess a source file
+examples/bigmsg_publisher.cpp.i:
+	$(MAKE) -f CMakeFiles/bigmsg_publisher.dir/build.make CMakeFiles/bigmsg_publisher.dir/examples/bigmsg_publisher.cpp.i
+.PHONY : examples/bigmsg_publisher.cpp.i
+
+examples/bigmsg_publisher.s: examples/bigmsg_publisher.cpp.s
+
+.PHONY : examples/bigmsg_publisher.s
+
+# target to generate assembly for a file
+examples/bigmsg_publisher.cpp.s:
+	$(MAKE) -f CMakeFiles/bigmsg_publisher.dir/build.make CMakeFiles/bigmsg_publisher.dir/examples/bigmsg_publisher.cpp.s
+.PHONY : examples/bigmsg_publisher.cpp.s
+
+examples/bigmsg_subscriber.o: examples/bigmsg_subscriber.cpp.o
+
+.PHONY : examples/bigmsg_subscriber.o
+
+# target to build an object file
+examples/bigmsg_subscriber.cpp.o:
+	$(MAKE) -f CMakeFiles/bigmsg_subscriber.dir/build.make CMakeFiles/bigmsg_subscriber.dir/examples/bigmsg_subscriber.cpp.o
+.PHONY : examples/bigmsg_subscriber.cpp.o
+
+examples/bigmsg_subscriber.i: examples/bigmsg_subscriber.cpp.i
+
+.PHONY : examples/bigmsg_subscriber.i
+
+# target to preprocess a source file
+examples/bigmsg_subscriber.cpp.i:
+	$(MAKE) -f CMakeFiles/bigmsg_subscriber.dir/build.make CMakeFiles/bigmsg_subscriber.dir/examples/bigmsg_subscriber.cpp.i
+.PHONY : examples/bigmsg_subscriber.cpp.i
+
+examples/bigmsg_subscriber.s: examples/bigmsg_subscriber.cpp.s
+
+.PHONY : examples/bigmsg_subscriber.s
+
+# target to generate assembly for a file
+examples/bigmsg_subscriber.cpp.s:
+	$(MAKE) -f CMakeFiles/bigmsg_subscriber.dir/build.make CMakeFiles/bigmsg_subscriber.dir/examples/bigmsg_subscriber.cpp.s
+.PHONY : examples/bigmsg_subscriber.cpp.s
 
 examples/camera_demo_publisher.o: examples/camera_demo_publisher.cpp.o
 
@@ -678,6 +758,7 @@ help:
 	@echo "... depend"
 	@echo "... pointcloud_demo_subscriber"
 	@echo "... SharedMemoryRingBuffer"
+	@echo "... bigmsg_publisher"
 	@echo "... fast_consumer"
 	@echo "... produce_example"
 	@echo "... SimpleShm"
@@ -686,12 +767,19 @@ help:
 	@echo "... image_demo_subscriber"
 	@echo "... my_publisher"
 	@echo "... camera_demo_publisher"
+	@echo "... bigmsg_subscriber"
 	@echo "... my_subscriber"
 	@echo "... camera_subscriber"
 	@echo "... camera_publisher"
 	@echo "... shm_cli"
 	@echo "... lidar_simulator"
 	@echo "... lidar_demo_publisher"
+	@echo "... examples/bigmsg_publisher.o"
+	@echo "... examples/bigmsg_publisher.i"
+	@echo "... examples/bigmsg_publisher.s"
+	@echo "... examples/bigmsg_subscriber.o"
+	@echo "... examples/bigmsg_subscriber.i"
+	@echo "... examples/bigmsg_subscriber.s"
 	@echo "... examples/camera_demo_publisher.o"
 	@echo "... examples/camera_demo_publisher.i"
 	@echo "... examples/camera_demo_publisher.s"

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/bigmsg_subscriber.dir/examples/bigmsg_subscriber.cpp.o  -o bigmsg_subscriber  libSimpleShm.a libSharedMemoryRingBuffer.a -lpthread -lrt 
